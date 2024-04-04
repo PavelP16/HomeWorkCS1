@@ -7,7 +7,7 @@ public class Main {
             System.out.printf("«Если возраст человека равен %s он совешенолетний».\n", human1);
         }
         int human2 = 17;
-        if (human2 <= 18) {
+        if (human2 < 18) {
             System.out.printf("«Если возраст человека равен %s он не достиг совершеннолетия, нужно немного подождать».\n", human2);
         }
 
@@ -34,14 +34,14 @@ public class Main {
         }
 
         System.out.println("\nЗадача №4_________________________________________________________________________");
-        int person = 25;
+        int person = 18;
         if (person > 24) {
             System.out.printf("«Если возраст человека равен %s, то ему пора ходить на работу».\n", person);
         } else if (person >= 2 && person <= 6) {
             System.out.printf("«Если возраст человека равен %s, то ему нужно ходить в детский сад»».\n", person);
         } else if (person >= 7 && person <= 17) {
             System.out.printf("«Если возраст человека равен %s, то ему нужно ходить в ходить в школу».\n", person);
-        } else if (person >= 17 && person <= 24) {
+        } else if (person > 17 && person <= 24) {
             System.out.printf("«Если возраст человека равен %s, то его место в университете.».\n", person);
         }
 
@@ -68,10 +68,12 @@ public class Main {
         int two = 2;
         int three = 3;
 
-        if (one > two) {
+        if (one < two) {
             System.out.println("one меньше two");
         } else if (two < three) {
             System.out.println("two меньше three");
+        }else if (three>two || three>one){
+            System.out.println("three больше всех");
         }
     }
 }
