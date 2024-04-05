@@ -67,13 +67,22 @@ public class Main {
         int one = 1;
         int two = 2;
         int three = 3;
-
-        if  (one < two || one< three ) {
-            System.out.println("one меньше two");
-        } else if (two < three) {
-            System.out.println("two меньше three");
-        }else if (three>two || three>one){
-            System.out.println("three больше всех");
+        if (one >= two && one >= three) {
+            System.out.println("Наибольшее число: " + one);
+        } else if (two >= one && two >= three) {
+            System.out.println("Наибольшее число: " + two);
+        } else {
+            System.out.println("Наибольшее число: " + three);
         }
+        System.out.println("\nДополнительная задача_________________________________________________________________________");
+
+        int on = 1;
+        int tw = 2;
+        int max = Math.max(on, tw);
+        int min = Math.min(on, tw);
+        System.out.println(max + " наибольшие число");
+        System.out.println(min + " наименьшие число");
+
+
     }
 }
