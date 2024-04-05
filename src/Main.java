@@ -12,8 +12,8 @@ public class Main {
         }
 
         System.out.println("\nЗадача №2_________________________________________________________________________");
-        int temperature1 = 3;
-        if (temperature1 < 5) {
+        int temperature1 = 5;
+        if (temperature1 <= 5) {
             System.out.printf("«На улице %s градусов, нужно надеть шапку».\n", temperature1);
         }
         int temperature2 = 6;
@@ -28,8 +28,8 @@ public class Main {
             System.out.printf("«Если скорость %s, то придется заплатить штраф».\n", speed1);
 
         }
-        int speed2 = 55;
-        if (speed2 < 60) {
+        int speed2 = 60;
+        if (speed2 <= 60) {
             System.out.printf("«Если скорость %s, то можно ездить спокойно».\n", speed2);
         }
 
@@ -55,12 +55,12 @@ public class Main {
             System.out.printf("«Если возраст ребенка равен %s, то он может кататься без сопровождения взрослого.».\n", child);
         }
         System.out.println("\nЗадача №6_________________________________________________________________________");
-        int human = 103;
+        int human = 60;
         if (human <= 60) {
             System.out.println("В вагоне есть сидячие места");
         } else if (human >= 61 && human <= 102) {
             System.out.println("В вагоне есть стоячие места");
-        } else if (human >= 103) {
+        } else {
             System.out.println("Вагон полностью забит");
         }
         System.out.println("\nЗадача №7_________________________________________________________________________");
