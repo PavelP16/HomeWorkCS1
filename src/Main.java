@@ -40,7 +40,7 @@ public class Main {
         } else if (person >= 2 && person <= 6) {
             System.out.printf("«Если возраст человека равен %s, то ему нужно ходить в детский сад»».\n", person);
         } else if (person >= 7 && person <= 17) {
-            System.out.printf("«Если возраст человека равен %s, то ему нужно ходить в ходить в школу».\n", person);
+            System.out.printf("«Если возраст человека равен %s, то ему нужно ходить в школу».\n", person);
         } else if (person > 17 && person <= 24) {
             System.out.printf("«Если возраст человека равен %s, то его место в университете.».\n", person);
         }
@@ -68,7 +68,7 @@ public class Main {
         int two = 2;
         int three = 3;
 
-        if (one < two) {
+        if  (one < two || one< three ) {
             System.out.println("one меньше two");
         } else if (two < three) {
             System.out.println("two меньше three");
