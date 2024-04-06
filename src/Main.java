@@ -63,7 +63,9 @@ public class Main {
         } else {
             System.out.println("Вагон полностью забит");
         }
+        /*Какое из тре чисел самое большое*/
         System.out.println("\nЗадача №7_________________________________________________________________________");
+        //Решение №1
         int one = 1;
         int two = 2;
         int three = 3;
@@ -75,13 +77,14 @@ public class Main {
             System.out.println("Наибольшее число: " + three);
         }
         System.out.println("\nДополнительная задача_________________________________________________________________________");
-
+        //Решение №2
         int on = 1;
         int tw = 2;
-        int max = Math.max(on, tw);
-        int min = Math.min(on, tw);
-        System.out.println(max + " наибольшие число");
-        System.out.println(min + " наименьшие число");
+        int th =3;
+        int result =Math.max(on, Math.max(tw,th));
+        System.out.println(result+ " наибольшие число число");
+
+
 
 
     }
