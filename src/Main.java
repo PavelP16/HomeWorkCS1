@@ -16,9 +16,9 @@ public class Main {
         System.out.println("\ntask 2___________________________________________________________________________________");
         int deviceYevice = 2015;
 
-        if (operatingSystem  == 1 && deviceYevice  == 2015) {
+        if (operatingSystem  == 0 && deviceYevice  == 2015) {
             System.out.println("«Установите облегченную версию приложения для iOS по ссылке».");
-        } else if (operatingSystem  == 1 ) {
+        } else if (operatingSystem  == 0 ) {
             System.out.println("«Установите версию приложения для iOS по ссылке».");
         } else if (operatingSystem  == 1 && deviceYevice  < 2015) {
             System.out.println("«Установите облегченную версию приложения для Android по ссылке».");
@@ -45,7 +45,7 @@ public class Main {
             System.out.println("Пoтpeбуется дней: " + days);
 
         } else if (deliveryDistance > 60 && deliveryDistance <= 100) {
-            days = days + 1 + 1;
+            days = days +=2;
             System.out.println("Пoтpe6yeтcя дней: " + days);
 
         } else {
@@ -67,7 +67,7 @@ public class Main {
                 System.out.printf("Лето");
                 break;
             case 9, 10, 11:
-                System.out.printf("Зима");
+                System.out.printf("Осень");
                 break;
             default:
                 System.out.printf("Данного времени года не существует, ошибка");
